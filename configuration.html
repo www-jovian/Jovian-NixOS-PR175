@@ -53,8 +53,8 @@ This will only enable the Steam Deck UI tooling. To enable "desktop" steam, enab
 Then you can start the UI using one of the following methods:</p>
 <ul>
 <li>(<strong>preferred</strong>) Use <code>jovian.steam.autoStart = true;</code> to auto-start at login, and enabling use of <em>Switch to Desktop</em> option.</li>
-<li>Select "Gaming Mode" in the Display Manager or run <code>steam-session</code> in a VT.</li>
-<li>Launch <code>steam-session</code> within an existing desktop session. This will run <a href="https://github.com/Plagman/gamescope">gamescope</a> in nested mode which results in higher latency.</li>
+<li>Select "Gaming Mode" in the Display Manager or run <code>start-gamescope-session</code> in a VT.</li>
+<li>Launch <code>gamescope-session</code> within an existing desktop session. This will run <a href="https://github.com/Plagman/gamescope">gamescope</a> in nested mode which results in higher latency.</li>
 </ul>
 <p>If you want <em>Switch to Desktop</em> to switch to another session with <code>autoStart</code>, you will need to configure <code>jovian.steam.desktopSession</code>.
 Configure it with the name of the X11 or Wayland session of your choosing.

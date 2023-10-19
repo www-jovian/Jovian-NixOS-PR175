@@ -50,8 +50,8 @@
 </code></pre>
 <p>To manually start <strong>Gaming Mode</strong> (also known as the <strong>Steam Deck UI</strong>), there are two options:</p>
 <ul>
-<li>Select "Gaming Mode" in the Display Manager or run <code>steam-session</code> in a VT.</li>
-<li>Launch <code>steam-session</code> within an existing desktop session. This will run <a href="https://github.com/Plagman/gamescope">gamescope</a> in nested mode which results in higher latency.</li>
+<li>Select "Gaming Mode" in the Display Manager or run <code>start-gamescope-session</code> in a VT.</li>
+<li>Launch <code>gamescope-session</code> within an existing desktop session. This will run <a href="https://github.com/Plagman/gamescope">gamescope</a> in nested mode which results in higher latency.</li>
 </ul>
 <h2>Start On Boot</h2>
 <p>To automatically launch Gaming Mode on boot and enable desktop switching from the power menu:</p>
@@ -68,7 +68,7 @@
 </code></pre>
 <h2>Troubleshooting</h2>
 <p>Logs from Gaming Mode can be obtained with:</p>
-<pre><code class="language-bash highlight">journalctl <span class="nt">--user</span> <span class="nt">-u</span> steam-session.slice
+<pre><code class="language-bash highlight">journalctl <span class="nt">--user</span> <span class="nt">-u</span> gamescope-session
 </code></pre>
 <h2>Options</h2>
 <div class="for-github -unneeded">
@@ -161,7 +161,7 @@ boolean
 <p>Whether to enable the Steam Deck UI.</p>
 <p>When enabled, you can either use the <code>autoStart</code> option (preferred),
 launch the Steam Deck UI from your Display Manager or
-by running <code>steam-session</code>.</p>
+by running <code>start-gamescope-session</code>.</p>
 </div>
 </div>
 <div class="option-data -declaration">
